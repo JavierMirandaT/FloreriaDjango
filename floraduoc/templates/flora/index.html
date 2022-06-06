@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% load static %}
+    <link rel="shortcut icon" href="{% static 'flora/images/favicon.ico' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{% static 'flora/images/apple-touch-icon.png' %}">
+    <link rel="stylesheet" href="{% static 'flora/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'flora/css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'flora/css/all.css'%}">
+    <link rel="stylesheet" href="{% static 'flora/css/responsive.css'%}">
+    <link rel="stylesheet" href="{% static 'flora/css/custom.css'%}">
+    <link rel="shortcut icon" href="{% static 'flora/images/BARRA/logo.png'%}" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f8836bc9df.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+<!--BARRA ARRIBA DE REDESOCIALES-->
+<div class="main-top" style="height: 55px;">
+    <div class="container-fluid text-center" style="align-items: center; align-content: center;">
+        <div class="row" style=" align-items: center; align-content: center;">
+            <div class="col-lg-4 col-md-12 col-sm-12" style="margin: auto;">
+                <div class="footer-top-box text-center" >
+                    <ul>
+                        <li><a href="https://www.facebook.com/punchi.dunchi"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/floraduoc"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="https://wa.me/56945441036"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- BARRA NAVEGACION -->
+<div>
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container" style="background-color:white">
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i></button>
+                    <a class="navbar-brand" href="index"><img src="{% static 'flora/images/BARRA/logo.png'%}" class="logo"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="nav-item"><a class="nav-link" href="index">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tienda">Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="donaciones">Donaciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#divnosotros">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="usuario">Usuario</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a id="textClima"></a>
+                        <img id="imgClima">
+                        <a>VIÑA</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>       
+</div>
+
+<!-- CARRUCEL_1-->
+<div id="slides-shop" class="cover-slides">
+    <ul class="slides-container">
+        <li class="text-center">
+                <img src="{% static 'flora/images/PRIMER CARRUCEL/BANNER1.jpg'%}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Tierra De Hojas</strong></h1>
+                        <p class="m-b-40">Diferentes tipos de Tierras.</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="text-center">
+            <img src="{% static 'flora/images/PRIMER CARRUCEL/BANNER3.jpg'%}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Arbustos</strong></h1>
+                        <p class="m-b-40">Muchos tipos de Arbustos disponibles.</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="text-center">
+            <img src="{% static 'flora/images/PRIMER CARRUCEL/BANNER2.jpg'%}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Maceteros</strong></h1>
+                        <p class="m-b-40">Muchos tipos de maceteros disponibles.</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="text-center">
+            <img src="{% static 'flora/images/PRIMER CARRUCEL/BANNER4.jpg'%}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Flores</strong></h1>
+                        <p class="m-b-40">Hermosas flores disponibles.</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+<div class="slides-navigation">
+        <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+    </div>
+</div>
+<!--CATEGORIAS-->
+    <div class="categories-shop">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-all text-center">
+                        <h1>CATEGORIAS</h1>
+                        <p>MEJORES PRODUCTOS EN ARBUSTOS-FLORES-MACETEROS-TIERRAS</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="{% static 'flora/images/CATEGORIAS/categoria1.jpg'%}" alt="" />
+                        <a class="btn hvr-hover" href="tienda">MACETEROS</a>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="{% static 'flora/images/CATEGORIAS/categoria2.jpg'%}" alt="" />
+                        <a class="btn hvr-hover" href="tienda">ARBUSTOS</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="{% static 'flora/images/CATEGORIAS/categoria3.jpg'%}" alt="" />
+                        <a class="btn hvr-hover" href="tienda">FLORES</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" STYLE="height: center;">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="{% static 'flora/images/CATEGORIAS/categoria4.jpg'%}" alt="" />
+                        <a class="btn hvr-hover" href="tienda" >TIERRA DE HOJA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- PROMOCIONES  -->
+<div class="all-title-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="offer-box-products">
+					    <a href="donaciones"><img class="img-fluid" src="{% static 'flora/images/PROMOCIONES/descuento.png'%}"/></a>
+					</div>
+				</div>
+				    <div class="col-lg-6 col-md-6 col-sm-12">
+					    <div class="offer-box-products">
+						    <a href="tienda"><img class="img-fluid" src="{% static 'flora/images/PROMOCIONES/promociones.png'%}"/></a>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+	</div>
+    </div>	
+
+<!-- MASVENDIDOS -->
+<div class="title-all text-center">
+    <div class="products-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-all text-center">
+                        <h1>TOP VENTAS</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row special-list">
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <div class="type-lb">
+                                <p class="sale">Disponible</p>
+                            </div>
+                            <img src="{% static 'flora/images/TOPVENTAS/girasoles.jpg'%}" class="img-fluid">
+                            <div class="mask-icon">
+                                <a class="cart" href="tienda">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>Girasoles</h4>
+                            <h5> $1500</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 special-grid top-featured">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <div class="type-lb">
+                                <p class="new">Nuevo</p>
+                            </div>
+                            <img src="{% static 'flora/images/topventas/rosa.png'%}" class="img-fluid">
+                            <div class="mask-icon">
+                                <a class="cart" href="tienda">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>Rosas</h4>
+                            <h5> $1800</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 special-grid top-featured">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <div class="type-lb">
+                                <p class="sale">disponible</p>
+                            </div>
+                            <img src="{% static 'flora/images/TOPVENTAS/maceterocolgante.jpg'%}" class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+                                <a class="cart" href="tienda">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>Macetero Colgante</h4>
+                            <h5> $8990</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 special-grid top-featured">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <div class="type-lb">
+                                <p class="sale">Disponible</p>
+                            </div>
+                            <img src="{% static 'flora/images/TOPVENTAS/tierradehoja1.jpg'%}" class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+                                <a class="cart" href="tienda">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>Tierra Premium</h4>
+                            <h5> $3220</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- BLOQUE DONACIONES  -->
+    <div class="all-title-box" id="divdonaciones">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-all text-center">
+                        <h1 style="color:white">Donaciones</h1>
+                        <p style="color:white">La comunidad de nuestra vecindad es financiada sin lucros y lo cual para poder mantenernos en este mismo formato somos abierto a recibir donaciones</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="justify-content: center;" >
+                <a href="donaciones">
+                  <div class="card text-white bg-dark mb-3" style="max-width: 18rem; color: white;">
+                    <div class="card-header">!DONACIONES AQUI!</div>
+                    <div class="card-body">
+                      <h5 class="card-title" style="color: rgb(254, 254, 254);">!AYUDANOS A SEGUIR!</h5>
+                      <p class="card-text">CADA APROTE ES IMPORTANTE PARA SEGUIR SIENDO UNA FUNDACION SIN FINES DE LUCRO</p>
+                    </div>
+                  </div>
+                </a>
+            </div>
+        
+        </div>
+    </div>
+    <!-- BLOQUE NOSOTROS -->
+    <div class="latest-blog" style="background-color: rgb(50, 159, 48);" id="divnosotros">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-all text-center">
+                        <h1>Nosotros</h1>
+                        <p style="color:black">Comunidad de la Vecindad del chavo del 8</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="justify-content: space-around;">
+                <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Javier Diaz 24</div>
+                    <div class="card-body">
+                      <h5 class="card-title" style="color: rgb(255, 255, 255);">Estudiante Duoc</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eaque autem numquam atque ex consequatur rerum vero mollitia similique illo, reprehenderit maiores exercitationem eius temporibus quia quaerat! Pariatur, fugiat impedit.</p>
+                    </div>
+                  </div>
+                
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.8650867029996!2d-71.53537278525096!3d-33.03368468362871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de64d74fd4af%3A0x8004f381e9055a38!2sDuoc%20UC%3A%20Sede%20Vi%C3%B1a%20Del%20Mar!5e0!3m2!1ses!2scl!4v1652073798806!5m2!1ses!2scl" style="max-width: 18rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  
+                  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Javier Miranda 26</div>
+                    <div class="card-body">
+                      <h5 class="card-title" style="color: rgb(255, 255, 255)">Estudiante Duoc</h5>
+                      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda sequi corrupti vitae quae fugiat recusandae tempore rem, odit quibusdam vel ut aliquid iusto, eum velit, optio ducimus facere deleniti nesciunt!</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ULTIMO CARRUCEL-->
+<div class="instagram-box">
+    <div class="main-instagram owl-carousel owl-theme">
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'flora/images/ULTIMO CARRUCEL/1.jpg'%}" width="200" height="200"/>
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/floraduoc"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'flora/images/ULTIMO CARRUCEL/2.jpg'%}" width="200" height="200"/>
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/floraduoc"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'flora/images/ULTIMO CARRUCEL/3.jpg'%}" alt="" width="200" height="200"/>
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/floraduoc"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'flora/images/ULTIMO CARRUCEL/4.jpg'%}"alt="" width="200" height="200"/>
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/floraduoc"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'flora/images/ULTIMO CARRUCEL/5.jpg'%}" alt="" width="200" height="200"/>
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/floraduoc"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'flora/images/ULTIMO CARRUCEL/6.jpg'%}" width="200" height="200"/>
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/floraduoc"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--copyright-->
+    <div class="footer-copyright">
+        <p class="footer-company">Creado por Grupo 8. &copy; 2022 <a href="#">FLORADUOC</a> Diseñado por : Javier Diaz Y Javier Miranda
+    </div>
+    <a href="#" id="back-to-top" title="Back to top" style="display: none; color: rgb(0, 0, 0); background-color: rgba(196, 242, 32, 0.445);">&uarr;</a>
+<!-- BIBLIOTECA JAVASCRIPT -->
+<script src="{% static 'flora/js/jquery-3.2.1.min.js'%}"></script>
+<script src="{% static 'flora/js/popper.min.js'%}"></script>
+<script src="{% static 'flora/js/bootstrap.min.js'%}"></script>
+<!-- ARCHIVOS NECESARIOS PARA LA PAGINA -->
+<script src="{% static 'flora/js/jquery.superslides.min.js'%}"></script>
+<script src="{% static 'flora/js/bootstrap-select.js'%}"></script>
+<script src="{% static 'flora/js/inewsticker.js'%}"></script>
+<script src="{% static 'flora/js/bootsnav.js.'%}"></script>
+<script src="{% static 'flora/js/images-loded.min.js'%}"></script>
+<script src="{% static 'flora/js/isotope.min.js'%}"></script>
+<script src="{% static 'flora/js/owl.carousel.min.js'%}"></script>
+<script src="{% static 'flora/js/baguetteBox.min.js'%}"></script>
+<script src="{% static 'flora/js/form-validator.min.js'%}"></script>
+<script src="{% static 'flora/js/contact-form-script.js'%}"></script>
+<script src="{% static 'flora/js/custom.js'%}"></script>
+<script src="{% static 'flora/js/index.js'%}"></script>
+</body>
+</html>

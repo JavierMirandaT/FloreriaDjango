@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% load static %}
+    <link rel="shortcut icon" href="{% static 'flora/images/favicon.ico' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{% static 'flora/images/apple-touch-icon.png' %}">
+    <link rel="stylesheet" href="{% static 'flora/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'flora/css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'flora/css/all.css'%}">
+    <link rel="stylesheet" href="{% static 'flora/css/responsive.css'%}">
+    <link rel="stylesheet" href="{% static 'flora/css/custom.css'%}">
+    <link rel="shortcut icon" href="{% static 'flora/images/BARRA/logo.png'%}" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f8836bc9df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <!-- BARRA NAVEGACION -->
+<div>
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container" style="background-color:white">
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i></button>
+                    <a class="navbar-brand" href="index"><img src="{% static 'flora/images/BARRA/logo.png'%}" class="logo"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="nav-item"><a class="nav-link" href="index">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="listar">Lista</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>       
+    </div>   
+
+    <div class="card">
+        <div class="card-body">
+            <div class="col-12 col-md-6 offset-md-3">
+                <table class="table table-striped table-hover table-responsive-sm">
+    
+                <form action="" method="post" enctype="multipart/form-data">
+    
+                {% csrf_token %}
+                {{ form }}
+
+                <input type="submit" value="Guardar" class="btn btn-primary">
+                <input type="reset" value="Cancelar" class="btn btn-secondary">
+    
+                </form>
+                {{mensaje}}
+                </table>
+            </div>
+        </div>
+    </div
+
+
+    <div class="instagram-box">
+        <div class="main-instagram owl-carousel owl-theme">
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="{% static 'flora/images/ULTIMO CARRUCEL/1.jpg'%}" width="200" height="200"/>
+                    <div class="hov-in">
+                        <a href="https://www.instagram.com/floraduoc"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="{% static 'flora/images/ULTIMO CARRUCEL/2.jpg'%}" width="200" height="200"/>
+                    <div class="hov-in">
+                        <a href="https://www.instagram.com/floraduoc"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="{% static 'flora/images/ULTIMO CARRUCEL/3.jpg'%}" alt="" width="200" height="200"/>
+                    <div class="hov-in">
+                        <a href="https://www.instagram.com/floraduoc"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="{% static 'flora/images/ULTIMO CARRUCEL/4.jpg'%}"alt="" width="200" height="200"/>
+                    <div class="hov-in">
+                        <a href="https://www.instagram.com/floraduoc"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="{% static 'flora/images/ULTIMO CARRUCEL/5.jpg'%}" alt="" width="200" height="200"/>
+                    <div class="hov-in">
+                        <a href="https://www.instagram.com/floraduoc"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="{% static 'flora/images/ULTIMO CARRUCEL/6.jpg'%}" width="200" height="200"/>
+                    <div class="hov-in">
+                        <a href="https://www.instagram.com/floraduoc"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--COPYRIGHT-->
+        <div class="footer-copyright">
+            <p class="footer-company">Creado por Grupo 8. &copy; 2022 <a href="#">FLORADUOC</a> Diseñado por : Javier Diaz Y Javier Miranda
+        </div>
+       
+    
+        <a href="#" id="back-to-top" title="Back to top" style="display: none; color: rgb(0, 0, 0); background-color: rgba(196, 242, 32, 0.445);">&uarr;</a>
+    
+    <!-- BIBLIOTECA JAVASCRIPT -->
+    <script src="{% static 'flora/js/jquery-3.2.1.min.js'%}"></script>
+    <script src="{% static 'flora/js/popper.min.js'%}"></script>
+    <script src="{% static 'flora/js/bootstrap.min.js'%}"></script>
+    <!-- ARCHIVOS NECESARIOS PARA LA PAGINA -->
+    <script src="{% static 'flora/js/jquery.superslides.min.js'%}"></script>
+    <script src="{% static 'flora/js/bootstrap-select.js'%}"></script>
+    <script src="{% static 'flora/js/inewsticker.js'%}"></script>
+    <script src="{% static 'flora/js/bootsnav.js.'%}"></script>
+    <script src="{% static 'flora/js/images-loded.min.js'%}"></script>
+    <script src="{% static 'flora/js/isotope.min.js'%}"></script>
+    <script src="{% static 'flora/js/owl.carousel.min.js'%}"></script>
+    <script src="{% static 'flora/js/baguetteBox.min.js'%}"></script>
+    <script src="{% static 'flora/js/form-validator.min.js'%}"></script>
+    <script src="{% static 'flora/js/contact-form-script.js'%}"></script>
+    <script src="{% static 'flora/js/custom.js'%}"></script>
+    <script src="{% static 'flora/js/index.js'%}"></script>
+    </body>
+    
+    </html>

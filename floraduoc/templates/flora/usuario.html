@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% load static %}
+    <link rel="shortcut icon" href="{% static 'flora/images/favicon.ico' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{% static 'flora/images/apple-touch-icon.png' %}">
+    <link rel="stylesheet" href="{% static 'flora/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'flora/css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'flora/css/all.css'%}">
+    <link rel="stylesheet" href="{% static 'flora/css/responsive.css'%}">
+    <link rel="stylesheet" href="{% static 'flora/css/custom.css'%}">
+    <link rel="shortcut icon" href="{% static 'flora/images/BARRA/logo.png'%}" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f8836bc9df.js" crossorigin="anonymous"></script>
+    <script>
+        
+        function soloLetras(e){
+       key = e.keyCode || e.which;
+       tecla = String.fromCharCode(key).toLowerCase();
+       letras = " áéíóúabcdefghijklmnñopqrstuvwxyz";
+       especiales = "8-37-39-46";
+
+       tecla_especial = false
+       for(var i in especiales){
+            if(key == especiales[i]){
+                tecla_especial = true;
+                break;
+            }
+        }
+
+        if(letras.indexOf(tecla)==-1 && !tecla_especial){
+            return false;
+
+        }
+    }
+    function emailOnBlur(){
+
+var correo = document.getElementById("inputCorreo").value;
+
+
+var emailCheck=/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i;
+var isValidate = emailCheck.test(correo);
+
+console.log(isValidate, correo);
+
+if(!isValidate){
+    alert("Verifique Correo")
+}
+}
+
+
+
+    </script>
+</head>
+<body>
+ <!--BARRA ARRIBA DE REDESOCIALES-->
+ <div class="main-top" style="height: 55px;">
+    <div class="container-fluid text-center" style="align-items: center; align-content: center;">
+        <div class="row" style=" align-items: center; align-content: center;">
+            <div class="col-lg-4 col-md-12 col-sm-12" style="margin: auto;">
+                <div class="footer-top-box text-center" >
+                    <ul>
+                        <li><a href="https://www.facebook.com/punchi.dunchi"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/floraduoc"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="https://wa.me/56945441036"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- BARRA NAVEGACION -->    
+<div>
+<header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+        <div class="container" style="background-color:white">
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i></button>
+                <a class="navbar-brand" href="index"><img src="{% static 'flora/images/BARRA/logo.png'%}" class="logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li class="nav-item"><a class="nav-link" href="index">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tienda">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="donaciones">Donaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="usuario">Usuario</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a id="textClima"></a>
+                    <img id="imgClima">
+                    <a>VIÑA</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>       
+</div>    
+<!-- TITULO -->
+    <div class="all-title-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>USUARIO</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- LOGIN -->
+    <br>
+    <div class="login-form">
+        <form >
+            <h2 class="text-center">Usuario</h2>       
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email" required="required"  id="inputCorreo"  onblur="emailOnBlur()">
+            </div>
+            <div class="form-group">
+                <input type="password" maxlength="10" class="form-control" placeholder="Contraseña" required="required">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">Conectar</button>
+            </div>
+            <div class="clearfix">
+                <label class="float-left form-check-label"><input type="checkbox"> Recordad Datos</label>
+                <a href="#" class="float-right">Recuperar Contraseña</a>
+            </div>  
+            
+            
+        </form>
+        <p class="text-center"><a onclick="showModalCreateAccount()" href="#">Crear Usuario</a></p>
+    </div>
+    <br>
+<!-- ULTIMO CARRUCEL-->
+<div class="instagram-box">
+    <div class="main-instagram owl-carousel owl-theme">
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'flora/images/ULTIMO CARRUCEL/1.jpg'%}" width="200" height="200"/>
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/floraduoc"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'flora/images/ULTIMO CARRUCEL/2.jpg'%}" width="200" height="200"/>
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/floraduoc"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'flora/images/ULTIMO CARRUCEL/3.jpg'%}" alt="" width="200" height="200"/>
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/floraduoc"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'flora/images/ULTIMO CARRUCEL/4.jpg'%}"alt="" width="200" height="200"/>
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/floraduoc"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'flora/images/ULTIMO CARRUCEL/5.jpg'%}" alt="" width="200" height="200"/>
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/floraduoc"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="{% static 'flora/images/ULTIMO CARRUCEL/6.jpg'%}" width="200" height="200"/>
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/floraduoc"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--COPYRIGHT-->
+    <div class="footer-copyright">
+        <p class="footer-company">Creado por Grupo 8. &copy; 2022 <a href="#">FLORADUOC</a> Diseñado por : Javier Diaz Y Javier Miranda
+    </div>
+   
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none; color: rgb(0, 0, 0); background-color: rgba(196, 242, 32, 0.445);">&uarr;</a>
+
+<!-- BIBLIOTECA JAVASCRIPT -->
+<script src="{% static 'flora/js/jquery-3.2.1.min.js'%}"></script>
+<script src="{% static 'flora/js/popper.min.js'%}"></script>
+<script src="{% static 'flora/js/bootstrap.min.js'%}"></script>
+<!-- ARCHIVOS NECESARIOS PARA LA PAGINA -->
+<script src="{% static 'flora/js/jquery.superslides.min.js'%}"></script>
+<script src="{% static 'flora/js/bootstrap-select.js'%}"></script>
+<script src="{% static 'flora/js/inewsticker.js'%}"></script>
+<script src="{% static 'flora/js/bootsnav.js.'%}"></script>
+<script src="{% static 'flora/js/images-loded.min.js'%}"></script>
+<script src="{% static 'flora/js/isotope.min.js'%}"></script>
+<script src="{% static 'flora/js/owl.carousel.min.js'%}"></script>
+<script src="{% static 'flora/js/baguetteBox.min.js'%}"></script>
+<script src="{% static 'flora/js/form-validator.min.js'%}"></script>
+<script src="{% static 'flora/js/contact-form-script.js'%}"></script>
+<script src="{% static 'flora/js/custom.js'%}"></script>
+<script src="{% static 'flora/js/index.js'%}"></script>
+    <script>
+        function showModalCreateAccount(){
+            $('#exampleModal').modal('show')}
+    </script>
+</body>
+
+</html>
